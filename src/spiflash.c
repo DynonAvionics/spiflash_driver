@@ -390,6 +390,8 @@ static int _spiflash_end_async(spiflash_t *spi, int res) {
   case BCW_IDLE:
     SPIF_DBG("no BCW\n");
     break;
+  default:
+    break;
   } // switch (spi->busy_check_wait)
   
   // handle results
