@@ -28,6 +28,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #ifndef SPIFLASH_H_
 #define SPIFLASH_H_
+#ifdef __cplusplus
+ extern "C" {
+#endif
 
 #include <stdint.h>
 #include <string.h>
@@ -441,5 +444,8 @@ int SPIFLASH_is_busy(spiflash_t *spi);
  */
 int SPIFLASH_async_trigger(spiflash_t *spi, int err_code);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /*SPIFLASH_H_*/
 
